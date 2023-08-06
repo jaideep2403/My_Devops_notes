@@ -1,0 +1,14 @@
+Application
+Shell    -- user interface to interact with kernel
+Kernel   -- interact with hardware
+Hardware
+
+shell provides an environment for an user to execute commands and interact with the kernel.
+Types - bash, sh , ksh , tsh , zsh
+
+echo $0 -- check shell type
+
+
+
+in vscode terminal -- echo $0 - /usr/bin/bash
+while in script -- echo $0 - filename
