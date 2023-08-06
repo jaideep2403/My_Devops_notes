@@ -5,8 +5,43 @@ Hardware
 
 shell provides an environment for an user to execute commands and interact with the kernel.
 Types - bash, sh , ksh , tsh , zsh
+#!/bin/bash (shebang) - to use which interpreter/shell
+ 
+to run a script -- ./script.sh or /path/script.sh or bash script.sh or bash ${PWD}/script1.sh
 
+cat /etc/shells - no of shells present
 echo $0 -- check shell type
+
+---------------------------------------------------------------
+Variable
+var_name=value               -- initialize a variable
+var_name=$(hostname)
+echo $var_name
+
+readonly var-name="Hi"    -- define a variable and dont want to change until end of script
+--------------------------------------------------------------------
+Arrays
+myArray=(1 2 3 4 "hello" "Hey man")
+echo "${myArray[5]}"
+echo "${#myArray[*]}"    --> print length of array
+echo "${myArray[*]:1}"   --> prints from 2nd position / specific values
+myArray +=( 5 6 8) 
+echo ${myArray[*]}   -- print whole array
+
+myVar="Hello world"
+length=${#myVar}
+upper=${myVar^^}
+lower=${myVar,,}
+replace=${myVar/world/buddy}
+slice=${myVar:6:10}
+-------------------------------------------------------------------------
+Asking user input
+read var
+read -p "your name is $var "
+-----------------------------------------------------------------
+
+
+
 
 
 
