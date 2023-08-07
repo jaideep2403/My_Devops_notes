@@ -11,6 +11,8 @@ to run a script -- ./script.sh or /path/script.sh or bash script.sh or bash ${PW
 
 cat /etc/shells - no of shells present
 echo $0 -- check shell type
+$# -- no of arguments
+$@ -- display all arguements
 
 ---------------------------------------------------------------
 Variable
@@ -39,8 +41,79 @@ Asking user input
 read var
 read -p "your name is $var "
 -----------------------------------------------------------------
-
-
+#!/bin/bash
+read -p "enter your marks: " marks
+if [[ $marks -gt 40 ]]
+then
+    echo "you passed"
+else
+    echo "you failed"
+fi
+-----------------------------------------------------------------
+#!/bin/bash
+echo "Hey choose an option"
+echo "a = To see current date"
+echo "b = to list files"
+read choice
+case $choice in
+    a) date;;
+    b)ls;;
+    *) echo  "not a valid input"
+esac
+----------------------------------------------------------------------
+#!/bin/bash
+read -p "what is you age? " age
+read -p "what is your country? " country
+if [[ $age -ge 18 ]] && [[ $country == "India" ]]
+then
+    echo "you can Vote"
+else
+    echo "you cannot vote"
+fi
+--------------------------------------------------------
+#!/bin/bash
+for i in {1..10}
+do 
+    echo $i
+done
+---------------------------------------------------
+items="/home/paul/names.txt"
+for items in $(cat $items)
+do 
+  echo $item
+done
+------------------------------------------------------
+#!/bin/bash
+count=0
+num=10
+while [[ $count -le $num ]]
+do
+    echo "Nos are $count "
+    let count++
+done
+--------------------------------------------
+until lool -- till condition is not true
+------------------------------------------------------------
+#!/bin/bash         -- Infinite loop
+while true
+do 
+    echo "Hi buddy"
+    sleep 1s
+done
+----------------------------------------
+#!/bin/bash
+for ((;;))
+do 
+    echo "Hi buddy"
+    sleep 1s
+done
+-----------------------------------------------------
+#!/bin/bash
+myfun () {
+    echo "Hello"
+}
+myfun
+myfun
 
 
 
