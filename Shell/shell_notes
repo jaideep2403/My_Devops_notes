@@ -14,6 +14,16 @@ echo $0 -- check shell type
 $# -- no of arguments
 $@ -- display all arguements
 
+basename - strip dir. info and give only filename
+dirname- strip filename give dir path
+realpath - gives full path for a file
+=============
+use set -x --to enable debugging of the script
+    set -e -- to exit our script when a command fail
+
+crontab -l /crontab -e
+* * * * * cd /home/paul/scripts && ./script.sh
+
 ---------------------------------------------------------------
 Variable
 var_name=value               -- initialize a variable
