@@ -1,0 +1,29 @@
+Q. VPC and its components?
+ public subnet , private subnet, nacl , route table , internet gateway  
+NAT gateway  - helps instances of private subnet to talk to internet
+
+Q. Diff between NACL and sec. group?
+NACL - above subnet  (both allow/deny policy)
+Sec . group - at instance level / service level  (by default allow) 
+
+Q.3 types of load balancer?         load balancer redirect traffic to target group
+App. Load Balancer     -- deals layer 7 traffic - http/ https -- 2 way communication / 25 cnames
+Neywork Load Balancer  -- deals layer 4 (udp)                 -- one way 
+Classic Load balancer   
+
+Q ASG and launch config?
+auto scaling group  - helpful in managing load/ instances
+
+Q. how to restore login to ec2 if pem file is lost
+ stop ec2 -- detach ebs vol  -- create new ec2 -- attach to ebs
+
+Q. how to encrypt / unencrypt ami
+ ami -- copy -- send to region -- option of encryption  -- encrypted ami created
+
+Q. EBS vs EFS?
+Q. VPC peering and VPC endpoint?
+Q. types odf s3 bucket / policy /lifecycle
+Q. iam roles and how to cross region roles work?
+Q. ec2 talk to ec2 in other region -- vpc peering / save ip of one in sec group of other
+Q. what is route 53 , types of routing policy?
+
