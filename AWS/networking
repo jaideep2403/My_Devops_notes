@@ -1,1 +1,33 @@
+network -- collection of devices that can communicate together
+protocol - rules determining format and transmission of data ( how msg to be sent)
+
+OSI (theoritical model)                   TCP / IP Model 
+7.Application   |  +H        |            ((        ||      ))  -- DNS , SMTP , SSH
+6.Presentation  |   +H       |            (( Application  ))
+5.Session       |    +H      |            ((        ||    ))
+4.Transport     |     +H     |            { Transport    }   -- TCP
+3.Network       |      +H    |            [[ Internet      ]]   --IP
+2.Data Link     |       +H   |            ( Network Interface )
+1.Physical      |----------|              (        |       )
+
+On/ off - 0/1  , 8 bits = 1byte
+128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255
+
+====================================================================================================================================================================================================
+Physical                      ~    AWS        
+Network Interface             ~  ENI ( elastic network interface)
+Physical server               ~  EC2
+VLAN (logical partition)      ~ Subnet
+Router (where to go)          ~ Routing Table                          #Router uses --layer 3   --uses ip -- to go beyond network  / forward packets  on remote network
+switch                                                #switch uses -- layer 2  -- uses mac address (eg talk in a single house) / forward packets on local network
+Firewall                       ~ Security group / NACL
+Internet Router                ~ Internet Gateway 
+                              VPC ( isolated space )
+
+VPC (regional )      service EC2, RDS , EMR, Load Balancer etc.
+default vpc exists (172.31.xx.xx)      / private ip -- non routable
+#can create vpc with same ip but have difficulty in peering      (https://cidr.xyz/)
+eg 10.0.0.0/16 -- 16 bits for network , remaining 16 bits for host address
+subnet -- pieces from vpc (scope is Availibility zone)
+===============================================================================================================================================================================================================
 
