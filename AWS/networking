@@ -38,6 +38,18 @@ nacl -- associate to a subnet (1:1 mapping) ( has both allow and deny )
       -- stateless - request, response both have to be allowed (eg india immigration) /verify both in , out 
 sec. group -- associated with an eni by def has an outbound rule  ( has only allow statements)
            -- stateful - response is always allowed (eg uk immigration) / verify only in
+=====================================================================================================================================================================================================
+internet gateway -- allows to connect to internet
+NAT Gateway -- allows to connect from private to external
+Virtual Private gateway -- associated with vpc 
+                        -- 1. use direct connect to on-prem (Dx)               eg. private jet 
+                               for consistent connection , heavy data transfer , prpoer SLA , not encrypted
+                           2. use via internet - (VPN) eg site to site vpn     eg. commercial flight
+                                for cost savings , not encrypted
+=====================================================================================================================-==================================================================
 
+
+
+        
 
 
