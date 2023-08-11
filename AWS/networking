@@ -24,10 +24,20 @@ Firewall                       ~ Security group / NACL
 Internet Router                ~ Internet Gateway 
                               VPC ( isolated space )
 
-VPC (regional )      service EC2, RDS , EMR, Load Balancer etc.
+VPC (regional )  ** NACL, Sec. GROUP, ROUTE TABLE, DHCP OPTIONS** gets created by default when we create vpc
+-----------------------service EC2, RDS , EMR, Load Balancer etc.
 default vpc exists (172.31.xx.xx)      / private ip -- non routable
 #can create vpc with same ip but have difficulty in peering      (https://cidr.xyz/)
 eg 10.0.0.0/16 -- 16 bits for network , remaining 16 bits for host address
 subnet -- pieces from vpc (scope is Availibility zone)
 ===============================================================================================================================================================================================================
+sec. group / nacl - network layer security
+door in a building - sec group
+sec guard - nacl   
+nacl -- associate to a subnet (1:1 mapping) ( has both allow and deny ) 
+      -- stateless - request, response both have to be allowed (eg india immigration) /verify both in , out 
+sec. group -- associated with an eni by def has an outbound rule  ( has only allow statements)
+           -- stateful - response is always allowed (eg uk immigration) / verify only in
+
+
 
