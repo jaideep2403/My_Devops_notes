@@ -1,0 +1,27 @@
++ echo 'My first Jenkins Job'
+My first Jenkins Job
++ whoami
+jenkins
++ pwd
+/var/lib/jenkins/workspace/demo-1
++ date
+Tue Aug 15 07:11:31 UTC 2023
+
+serach in search bar -- go to specific job
+ eg . demo-1 4 console -- shows output of 4th build
+
+manage Jenkins -- administrative tasks performed here 
+
+Delete workspace before build starts
+=============================================================================================
+Build Trigger remotely - trigger from any script
+token=mytoken
+
+#<ec2_ip>/job/demo-git/build?token=TOKEN_NAME or /buildWithParameters?token=TOKEN_NAME
+install build authorization token root plugin and edit below
+buildByToken/build?job=RevolutionTest&token=TacoTuesday
+
+http://13.234.232.227:8080/job/demo-git/build?token=mytoken    -- triggered from same browser not from incognito
+http://13.234.232.227:8080/buildByToken/build?job=demo-git&token=mytoken -- trigger from anywhere
+curl http://13.234.232.227:8080/buildByToken/build?job=demo-git&token=mytoken
+
