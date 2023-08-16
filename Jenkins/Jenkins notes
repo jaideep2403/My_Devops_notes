@@ -25,3 +25,13 @@ http://13.234.232.227:8080/job/demo-git/build?token=mytoken    -- triggered from
 http://13.234.232.227:8080/buildByToken/build?job=demo-git&token=mytoken -- trigger from anywhere
 curl http://13.234.232.227:8080/buildByToken/build?job=demo-git&token=mytoken
 
+Build periodically - build after specified time
+Poll Scm - check for new code, if no new code found will not run till then
+GitHub hook trigger for GITScm polling - inform jenkins about new code
+
+to create a global variable - Manage Jenkins -- Configure Systems -- Global Properties -- Env variable
+
+for user input -- select job is parameterized -- add and select parameter
+Terminate a build if it's stuck  --
+
+
