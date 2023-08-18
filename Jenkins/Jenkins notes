@@ -34,4 +34,8 @@ to create a global variable - Manage Jenkins -- Configure Systems -- Global Prop
 for user input -- select job is parameterized -- add and select parameter
 Terminate a build if it's stuck  --
 
+cont delivery - manual intervention
+cont deployment - automation
+
+
 
