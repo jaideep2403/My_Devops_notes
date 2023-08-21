@@ -1,0 +1,74 @@
+##############Hello world script
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+====================================================================================================================
+############## Pipeline as code
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing'
+            }
+        }
+        stage('Deploy_dev') {
+            steps {
+                echo 'Deploying to dev'
+            }
+        }
+        stage('Deploy_prod') {
+            steps {
+                echo 'Deploying to prod'
+            }
+        }
+    }
+}
+=================================================================================
+  pipeline {
+    agent any
+
+    stages {
+        stage('Date') {
+            steps {
+                sh 'date'
+            }
+        }
+        stage('Multiple') {
+            steps {
+                echo '''
+                pwd
+                ls
+                whoami
+                '''
+            }
+        }
+        stage('Deploy_dev') {
+            steps {
+                echo 'Deploying to dev'
+            }
+        }
+        stage('Deploy_prod') {
+            steps {
+                echo 'Deploying to prod'
+            }
+        }
+    }
+}
+===============================================================================================================================
+  
+  
