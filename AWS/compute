@@ -1,1 +1,7 @@
 
+scalability -- grow or shrink in graceful manner , growth friendly
+               -perform with same stability even if load increases
+               - to meet predictable increase in workload  ... to meet future demands
+elasticity  -- dynamic increase or decrease of resources , match resources in real time 
+             - to meet dynamic sudden increase in workload     ...to meet present demands
+You cannot have ELASTICITY without a SCALABLE system
