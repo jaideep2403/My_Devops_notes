@@ -1,0 +1,34 @@
+PART -1 Abishek Roshan
+1. set username and pw to never expire ---------------------------------- chage -M -1 krishna
+2. why /etc/passwd and /etc/shadow cannot be merged?
+  /etc/passwd - hashed pw stored accessible by root
+3. list opened files by PID ? -------------------------------------------- lsof -p PID
+4. unable to unmount filesystem? ---you are in same dir, some users in dir using its content (#fuser -cu /dev/sda), some files open in dir (#lsof /dev/sda)
+#5.if server take more time after reboot?     -------------filesystem got corrupt 
+#6. creating a file but getting permission denied alert? ----------- running out of inode (#df -i) - find unwanted files delete/move to other
+7. check kernel routing table info ? -------route -n, netstat -rn, ip route
+8. sticky bit s vs S ?   ------------s=set uid /executable , S=setuid /non executable
+==================================================================================================================================================================
+PART 2 
+9. specify default gateway ? - ----------------------- /etc/sysconfig/network ifcfg file
+10. switch between runlevels ? ---------------- systemctl set-default multiuser.target, systemctl get-default multiuser.target
+11. NFS , how to configure port 2049 ? ----------------- configure nfs server, client
+12. nice value , how to set? ---------------------------set priority of a process (-20 to 19) #nice -n 5 <command>
+13. FTP vs TFTP? --------------------------------file transfer protocol , trivial file trasfer protocol
+#14. extend filesystem? ------------------------------ LVM, lvextend, lvextend -L +1G /dev/vg/lv , resize2fs /dev/vg/lv
+15. rollback package after packaging ?  ----- ---------------- yum install vsftpd , yum history , yum history info 8 , yum history undo 8 
+16. rsync , scp ? --------------- scp start copy from start if interrupted, it starts from where it left after interruption
+17.reduce file system , do online or not ?----------------- lvreduce , no require downtime
+18. load average ------------------------------------ load average of computational work done by system ,#uptime
+==================================================================================================================================================================
+PART 3
+19.
+
+
+
+
+
+
+
+
+
