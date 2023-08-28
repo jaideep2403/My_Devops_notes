@@ -47,6 +47,8 @@ Virtual Private gateway -- associated with vpc
                            2. use via internet - (VPN) eg site to site vpn     eg. commercial flight
                                 for cost savings , not encrypted
 =====================================================================================================================-==================================================================
+VPC Peering - (PCx) - communicate from 1 vpc t another
+make a routing table entry
 
 
 
