@@ -22,8 +22,21 @@ PART 2
 18. load average ------------------------------------ load average of computational work done by system ,#uptime
 ==================================================================================================================================================================
 PART 3
-19.
-
+19.set no of lines using vi --------------------------------------- :se nu
+20 scan disk in linux ---------------------------------------------- echo "---" /sys/class/scsi_host/host0/scan , host1
+21. no of fields in /etc/fstab?   1.device_name 2.mount_point 3.type of fs 3.mount option 4.dumping 5.check sequence
+22. hard links vs soft links?  ---- shortcut file vs backup file , ln -s <src> <dest> , ln <src> <dest>
+23. create soft link across partition? --- yes, inode no is different
+24. location of nfs shared info? -- /etc/fstab
+25. port listening or not? ---------- netstat -tnlp | grep <port no>
+26. df vs du ?      ------
+    df  Disk Free -- output of file system, how much % full , how much left (shows metadata)
+    du Disk Usage ---(only inside a dir) Disk Usage - walks through dir , counts the sum of sizes, show info of specific dir
+27. pros ,cons of journalling -- dedicated area of file system where changes are tracked
+28. one package not allowing to patch ------------ rpm -ivh vsftpd --nodeps (with no dependencies)
+================================================================================================================
+PART 4
+29
 
 
 
