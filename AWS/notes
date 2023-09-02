@@ -1,0 +1,28 @@
+pay as you go (compute, storage, data tranfer)
+
+public cloud -- access over the internet
+
+Az - multiple DC's
+region - multiple Az
+local zone - single digit latency
+
+aws maps different AZ for different account
+
+sudo -i  --login as root
+nginx -t -- checks nginx command
+
+to not to delete ebs volume -- manage ebs volume -- yes
+#user data script always runs as root user
+
+video 23
+SECURITY GROUP - firewall only allow rule , inbound - incoming , outbound - outgoing
+can attach multiple security groups
+
+
+
+
+EBS Vol -- like hard disk, in one AZ
+ebs - data persistent / instance -store - data loss after reboot, more speed
+* creates a replica in same AZ
+
+
