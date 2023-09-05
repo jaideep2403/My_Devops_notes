@@ -36,7 +36,11 @@ PART 3
 28. one package not allowing to patch ------------ rpm -ivh vsftpd --nodeps (with no dependencies)
 ================================================================================================================
 PART 4
-29
+29. Boot process in Linux  ------- BIOS, MBR, GRUB /boot/grub/grub.conf, kernel, init (initrd - initial ram disk), runlevel
+30. pcpu , jcpu in w command?  ---
+31. press url and enter
+32
+
 
 
 
