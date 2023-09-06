@@ -39,7 +39,33 @@ PART 4
 29. Boot process in Linux  ------- BIOS, MBR, GRUB /boot/grub/grub.conf, kernel, init (initrd - initial ram disk), runlevel
 30. pcpu , jcpu in w command?  ---
 31. press url and enter
-32
+32 http 1xx -info message , 2xx - success of some kind , 3xx-client to another URL, 4xx-error on client part, 5xx - error on server part
+33 acl -- fine grained access ------------------------------------ getfacl -f filename, setfacl -m/R/x filename
+34. inode ----------(df -i filename)  unique identifier stores imp. information about files and directories, each file has own inode
+35. crontab , can we schedule 2s entry ? ------ no min 60s or 1min
+36 prod server rebooted automatically -------- last reboot | less, /var/log/acpi
+37. extract a single file  ------------- tar - xvtf xyz.tar | grep file
+38 . see memory ---------------- free -g , free -m , remove cache
+39 . see architechture   ----------------- uname -a
+====================================================================================================================
+PART 5
+40. find command --- find / -type -f -name ".logs" -exec grep 'error' {} \;
+atime (access time) - updated when file is accessed , mtime (modification time) -- when file content changes , ctime (change time) - when file ownership , permissions are changed
+42. delete logs 30 days older ----- find /tmp/logs -name "*.log" -mtime +30 exec ls -ltrh {} \:
+                                    find /tmp/logs -name "*.log" -mtime +30 exec rm -rf {} \:
+43 ls -l not getting output --------------------- file- disk -- disk got corrupted or ls not installed (which command)
+44 what is run queue , how to check?  -----no of active running and queued process #sar (install sysstat package) -- sar -q 1
+45 change default run level ------- /etc/inittab
+46 yum update vs yum upgrade -- both update to latest version, upgrade delete obselete package , update preserves them
+47 downgrade a package ? --- yum history list all, yum history undo <id>
+48 types of filesystem --------- file system is a method to organize your data , ext2, ext3, ext4
+49 remove duplicate packages? --------------package-cleanup - dupes
+================================================================================================================================
+
+
+
+
+        
 
 
 
