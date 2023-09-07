@@ -1,0 +1,8 @@
+PART 6
+61. tcp vs udp -------------------- tcp more secure /connection oriented /slow / no packet loss , udp less secure / connectionless / fast / 
+62.list dir inside dir using find command -----------  ls -d */ , find . -maxdepth 1 -type d
+63.diff between archive and tar ---------- archive many files into 1, gzip compreses 1 file
+64. raid ? --- storage writes data across multiple drives within same system,
+65 ext2 , ext3 , ext4 ------- ext2 doex not have journalling , ext3 has journalling ,ext4 high size xfs high performance
+66 - swap partition - swap - secondary ram, taking memory from secondary disk
+=======================================================================================================================================================================
