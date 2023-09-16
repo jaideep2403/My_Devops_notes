@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels: 
+      app: nginx
+  template:
+    metadata: 
+      name: nginx-pod
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+
+kubectl get all
+kubectl get rs
+kubectl get po
+kubectl get deploy
+kubectl get pods --show-labels
+kubectl scale --replicas=2 deployment/nginx-deployment    *** use spec file to do changes
+kubectl rollout history deployment/nginx-deployment        ----------- always use change cause
+kubectl rolout undo deployment/nginx-deployment --to-revision=1
