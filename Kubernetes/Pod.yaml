@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: nginx-pod1
+  labels:
+    team: integrations
+    app: todo
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx:latest
+      ports:
+      - containerPort: 80
+
+kubectl api-resource              ----------- get resource -types
+kubectl create -f nginx-pod.yaml
+kubectl delete pod nginx-pod1
+ubectl get pods -l team=integrations       ---------- with label (team = integrations )
+kubectl get pods -o yaml                  ------ info in yaml format
+kubectl describe pod nginx-pod1           -------- get details about single pod
+kubectl exec --stdin --tty <pod-name> -- /bin/bash     ===========================================
+kubectl port-forward nginx-pod1 8083:80
+kubectl logs <pod name> --------------------------------- check logs
