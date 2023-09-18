@@ -6,5 +6,6 @@ metadata:
 kubectl apply -f namespace.yaml 
 or 
 kubectl create namespace <name>
+kubectl delete ns <name>                ------------ deletes all resources in that namespace
 
 kubectl get all -n nginx
