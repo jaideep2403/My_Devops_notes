@@ -1,0 +1,11 @@
+emptydir - to store data at pod level
+hostPath: this volume mounts a file from host node file system into our pod, all pods on same node can use data
+Persistent volume (external storage) - available across cluster
+Persistent volume claim: finds appropriate volume and binds it
+storage classes  - how the pv should be created, not created in any namespace -- availabe to entire cluster
+
+** pvc dependent on pod
+   pvd depend on pvc
+pods created by developers, pv created by admin
+
+==================================================
