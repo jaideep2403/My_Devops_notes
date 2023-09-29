@@ -1,1 +1,53 @@
+*virtualization - splitting physical resources into as many logical resources as we want.
+hypervisor - software that creates and run virtual machines (bare metal hyp. -vmware esxi / hosted hyp).
+=========================================================================================================================================
+A container is a bundle of application + application libraries required to run your application , and the minimum system dependencies.
 
+Containers share resources from the host OS kernel, lighter and faster than vms. 
+they are portable and can run on any system with compatible os
+======================================================================================================================================
+Docker is a containerization platform that provides an easy way to containerize your applications.
+Lifecycle - build , run , push
+
+Docker daemon (docked)- listens for Docker API requests and manages Docker objects such as images, containers, networks, and volumes. 
+                         A daemon can also communicate with other daemons to manage Docker services.
+Docker client - The Docker client (docker) is the primary way that many Docker users interact with Docker.
+Dockerfile - is a file where you provide the steps to build your Docker Image.
+Docker image - An image is a read-only template with instructions for creating a Docker container. 
+================================================================================================================
+docker search <image>:tag -- searches the image
+docker ps / docker ps -a  -- gives list of running containers
+docker run -d -p 80:80 --name con_name <image> --- runs the container in background with port 80
+docker history <image> -- history of image
+docker exec -it <con_id> /bin/bash  -- executes a command inside the container 
+docker network ls -- list docker networks
+docker container prune - removes all stopped containers
+docker container rm -f $(docker container ls -aq) - removes all containers
+docker image rm -f $(docker image ls -aq) - removes all images
+
+docker info - gives whole info 
+docker logs <con_id>  -- list the logs of running container
+docker stop <con_id> / docker kill <con_id>  -- to stop/ kill running containers
+docker pause <con_id> / docker unpause <con_id> -- suspend all process in specified containers.
+docker stats -- shows the stats of a host like usage of memory cpu etc.
+docker top <con_id>  -- Display the running processes of a container. 
+docker port <con_id> -- List port mappings or a specific mapping for the container.
+
+#### Docker Volumes ####
+docker volume create my-vol - Create a volume
+docker volume ls - lists the volume on host
+docker volume inspect my-vol - inspects the my-vol volume
+docker volume rm my-vol - removes the my-vol volume
+docker run -d --mount source=my-vol2, target=/app <image_name> - start a container with volume
+
+#### Docker Network ####
+docker network create mynetwork - creates a custom bridge network
+docker run -d --network mynetwork <image_name> - Runs a container on Custom network
+docker network ls - lists all the networks
+
+#### Docker Compose ####
+docker-compose -  is a command-line tool that is used to define and manage multi-container Docker applications using a single configuration file.
+docker-compose up - command to start your application
+docker-compose down - command to stop your application
+docker-compose logs - command to can view the logs of the containers
+docker-compose config - command can inspect the current configuration of your application
