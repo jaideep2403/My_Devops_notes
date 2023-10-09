@@ -1,0 +1,44 @@
+AWS
+1. route 53, uses? -- highly available and scalabe DNS - DNS as a service - resolves domain name to IP. in real world it resolves domain name to LB IP.
+2. Load Balancer types of LB? --
+3. public vs private subnet, route table entry? 
+4. private subnet instance goes to internet? -- NAT gateway
+5. If public subnet instances has public IP then why it needs IGW to access internet?
+6. auto scaling group?
+7. launch template vs launch config.?
+8. what is golden AMI?
+9. hos is ALB configured?
+
+Q. ec2 in public subnet not public subnet not able to talk to internet?
+Q. ec2 not able to connect through ssh and rdp
+Q. not able to mount efs vol on ec2, troubleshoot?
+
+
+
+Linux
+1. types of processes?
+2. directories at root level?
+3. daemon process why used if there is background process?
+4. restrict a person to delete a file in linux?
+5. port no ssh, rdp, http, https ?
+
+
+Docker
+1. what is dangling images? -- a dangling image is an image that is not used by any container or referenced by any other image , docker image prune
+2. want to run docker container but restrict the resources for the container?
+3. docker containers connectivity issue, troubleshoot?
+4. check status of docker container? docker ps -a
+5. go inside running container?
+6. check all cpu memory resources of Docker container?
+
+
+
+Kubernetes 
+1. HPA and how it is configured?
+2. Explain architechture of k8s?
+3. how to deploy 3 tier app in kubernetes?
+4. autoscaling , advantages vs disadvantages? 
+
+
+
+
