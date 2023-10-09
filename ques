@@ -1,12 +1,13 @@
 AWS
 1. route 53, uses? -- highly available and scalabe DNS - DNS as a service - resolves domain name to IP. in real world it resolves domain name to LB IP.
-2. Load Balancer types of LB? --
+2. Load Balancer types of LB? -- ALB, NLB
 3. public vs private subnet, route table entry? 
 4. private subnet instance goes to internet? -- NAT gateway
 5. If public subnet instances has public IP then why it needs IGW to access internet?
 6. auto scaling group?
 7. launch template vs launch config.?
-8. what is golden AMI?
+8. what is golden AMI? -- golden ami is a pre configured ami which is used as a refrence for creating other AMI
+   ami - template to launch ec2
 9. hos is ALB configured?
 
 Q. ec2 in public subnet not public subnet not able to talk to internet?
