@@ -1,0 +1,13 @@
+Nimsoft provides bank with full event and metrics monitoring of servers
+33k servers, monitor 14 million infra conditions at per-minute freq, collects 2.8 B metrics per day
+its integrated , forwards events to Netcool, forwards metrics to KDB database
+KDB db provides metrics to Grafana dashboard
+
+Nimsoft- efficiently monitors and captures the performance and availability of servers.
+netcool - centralized event collaboration system
+db_perfmon - platform to visualize metrics leverages Grafaa tech.
+KDB+ repo- ingests 3 billion real time metrics (cpu, memory, disk , system load)
+control-m - automates and simplifies batch job creation
+db_genos - used for application monitoring
+
+Nimsoft -> Netcool (events) , KDB+ (metrics) -> Grafana dashboard.
