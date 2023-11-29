@@ -10,7 +10,7 @@ conifg file = #cat /etc/crontab
 
 rsync -v <source_path> <dest_path> --progress
 rsync -av -e ssh /file/* root@ip:/dest_path/
-
+------------------------------------------------------------------
 SCP
 scp -pr file roor@ip:/path
 
@@ -24,4 +24,18 @@ lvcreate -L -n +2G LV VG
 mkdir /testdir
 mkfs.ext4 /dev/VG/LV /testdir
 resize2fs /dev/VG/LV  or xfsgrowfs
+--------------------------------------------------------------------
+inode - cocntains metadata about file, name, permissions 
+        df -i ( to check inodes free) -- unique inode no
+		inode no. permissions no.of links root root date_modified
+		
+		hardlink - ln file_name hardLink_name  (same inode no) -- both are same files, same owner same info 
+		softlink - ln -s file_name softlink_name (diff inode no) -- only permissions of target apply here, can link to anywhere
+		           if original file is removed, symlink will not work
+				   ** to remove rm softlink_filename
+-----------------------------------------------------------------------------------
+program - process running in the system (utilizing ram) , has a unique id (parent id has a smaller no compared to child id)
+init/systemd - process id 1 ( started by kernel , does not have parent id)
+daemon process start running on own, keeps runing till end
+zombie process - not utilizing resources but has an entry in table
 
