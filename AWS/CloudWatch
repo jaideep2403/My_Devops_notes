@@ -1,0 +1,12 @@
+Cloud watch - monitoring and observability service
+why monitor - to check  performance / utilization / health / security
+
+
+cloud watch collects logs, metrics , events and visualizes using automated dashboard.
+
+metrics - data about performance of system. eg cpu utilization
+events - something happening / change in resources - eg ec2 run to sttop
+alarm - to trigger action based on metrics - cpu 80% utilization
+
+CLOUD WATCH AGENT - To send notifications to cloud watch service
+detail monitoring - monitoring every min
