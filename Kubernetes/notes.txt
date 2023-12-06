@@ -1,0 +1,10 @@
+Pod - encapsulated layer for containers , can have 1 or more containers
+    - all containers in pod share same network and storage , assigned unique ip address
+
+kubectl run nginx-pod --image=nginx
+
+kubectl api-resources | grep -i pod               -- to check api resource version
+kubectl describe nginx-pod1                       -- detail info about the pod
+kubectl get pods / kubectl get pods -o wide       -- info about multiple pods
+kubectl exec -it nginx-pod -- bash                -- enter into pod 
+kubectl logs nginx-pod1                           -- to check logs of pod 
