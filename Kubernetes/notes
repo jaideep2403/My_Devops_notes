@@ -1,0 +1,24 @@
+Pod - encapsulated layer for containers , can have 1 or more containers
+    - all containers in pod share same network and storage , assigned unique ip address
+-----------------------------------------------------------------------------------------------------
+Service - ip assigned to pods keeps on changing as new pods gets created , so we abstract the pod ip from end-user
+          when the service is created , an ip is assigned to service, it does not change as long as service exist.
+         uses - load balancing , service discovery , zero downtime deployments .
+         (port: service receive request, targetPort: on which container is running)
+         --#kubectl get endpoint (endpoint object is also created when we create a service)
+types:
+1.ClusterIp: exposes the ports on ip internal to cluster, useful when we dont want to expose app. to outside but pods inside cluster can 
+             access it.
+2.NodePort: This exposes the pod on each node on a static node . (nodePort - 30,000 - 32,767)
+            Access the nodeport from outside cluster nodeip:nodeport , any request to cluster on nodeport its forwaded to service ,  
+            internally acts as clusterip and forwards to appropriate pods .
+            cons : nodeip may change, not secure.
+3.LoadBalancer: exposes the pods using cloud providers , acts as clusterip and nodeport internally
+----------------------------------------------------------------------------------------------------------------------------------------
+
+kubectl run nginx-pod --image=nginx               -- to run a nginx pod with nginx image
+kubectl api-resources | grep -i pod               -- to check api resource version
+kubectl describe nginx-pod1                       -- detail info about the pod
+kubectl get pods / kubectl get pods -o wide       -- info about multiple pods
+kubectl exec -it nginx-pod -- bash                -- enter into pod 
+kubectl logs nginx-pod1 -f                        -- to check logs of pod / watch the logs
