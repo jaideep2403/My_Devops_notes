@@ -15,6 +15,17 @@ types:
             cons : nodeip may change, not secure.
 3.LoadBalancer: exposes the pods using cloud providers , acts as clusterip and nodeport internally
 ----------------------------------------------------------------------------------------------------------------------------------------
+Ingress - declare which request should go to which service (ingress rules)
+ingress controller - reads ingress rules and processes them , is a pod gets exposed through service
+-------------------------------------------------------------------------------------------------------------------------------------
+Namespace -
+default - resources not specified are created
+kube-node-lease - contains lease resources to send heartbeat of nodes
+kube-public - used for public resources
+kube-system - for objects created by kubernetes
+
+kubectl create namespace nginx                   -- to create namespace
+
 
 kubectl run nginx-pod --image=nginx               -- to run a nginx pod with nginx image
 kubectl api-resources | grep -i pod               -- to check api resource version
