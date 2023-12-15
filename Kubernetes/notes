@@ -18,11 +18,21 @@ types:
 Ingress - declare which request should go to which service (ingress rules)
 ingress controller - reads ingress rules and processes them , is a pod gets exposed through service
 -------------------------------------------------------------------------------------------------------------------------------------
-Namespace -
+Namespace - to create logical isolation
 default - resources not specified are created
 kube-node-lease - contains lease resources to send heartbeat of nodes
 kube-public - used for public resources
 kube-system - for objects created by kubernetes
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+Volumes - is a directory with some data in it
+problems 1.with deployment new pods get created as previous ones deleted and the data stored in container previously gets lost.
+         2. multiple replicas of same application , unable to share data as data is stored in container
+types:
+1.emptyDir: to store the data at pod level
+2.hostpath: mounts a dir from host nodes filesystem into pod
+
+
 
 kubectl create namespace nginx                   -- to create namespace
 
