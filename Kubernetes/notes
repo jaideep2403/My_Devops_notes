@@ -31,7 +31,10 @@ problems 1.with deployment new pods get created as previous ones deleted and the
 types:
 1.emptyDir: to store the data at pod level
 2.hostpath: mounts a dir from host nodes filesystem into pod
-
+3.PV/Pvc
+4. storage class - how pvs should be created dynamically
+  pvc should be available in same namespace
+  PV , Storage class are not name spaced and available to entire cluster
 
 
 kubectl create namespace nginx                   -- to create namespace
