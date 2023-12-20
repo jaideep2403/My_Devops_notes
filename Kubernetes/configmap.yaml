@@ -1,0 +1,45 @@
+########### Mount configmaps as a Volume
+apiVersion: v1
+kind: Pod
+metadata:
+  name: brezyweather-pod
+spec:
+  volumes:
+  - name: threshold-config-volume
+    configMap:
+      name: threshold-config-map
+  containers:
+  - image: codewithpraveen/labs-k8s-brezyweather:1.0
+    name: brezyweather-pod
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+    envFrom:
+      - configMapRef:
+          name: localization-config-map
+    volumeMounts:
+    - name: threshold-config-volume
+      mountPath: /etc/config
+
+---------------------------------------------------------------------------------------------------------------------\
+#######################config map as a environment variable
+apiVersion: v1
+kind: Pod
+metadata:
+  name: brezyweather-pod
+spec:
+  containers:
+  - image: codewithpraveen/labs-k8s-brezyweather:1.0
+    name: brezyweather-pod
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+    envFrom:
+      - configMapRef:
+          name: localization-config-map
