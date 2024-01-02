@@ -35,10 +35,20 @@ types:
 4. storage class - how pvs should be created dynamically
   pvc should be available in same namespace
   PV , Storage class are not name spaced and available to entire cluster
+---------------------------------------------------------------------------------------------------------------------------------------------
+To instruct kubernetes to deploy application pod to a node that has minimun capacity:
+resources:  to deploy application on a node where min memory and cpu is available.
+limits: instruct cpu and memory usage for a pod
+----------------------------------------------------------------------------------------------------------------------------------------------
+authenticate - check for valid user, authorize - check if allowed to do task (RBAC)
+apiserver authenticates and authorizes 
+give permission to user using roles & rolebindings (connect subject and role) 
+* rolebinding is namespaced (where it is defined, only there is valid)
+cluster role binding is at cluster level
+* service accounts are application users
 
 
 kubectl create namespace nginx                   -- to create namespace
-
 
 kubectl run nginx-pod --image=nginx               -- to run a nginx pod with nginx image
 kubectl api-resources | grep -i pod               -- to check api resource version
