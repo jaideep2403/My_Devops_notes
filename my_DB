@@ -10,4 +10,9 @@ KDB+ repo- ingests 3 billion real time metrics (cpu, memory, disk , system load)
 control-m - automates and simplifies batch job creation
 db_genos - used for application monitoring
 
+The Nimsoft Robot(agent) controls a number of monitoring probes. Each probe is responsible for monitoring a specific  part of system.
+Each monitoring probe configured to trigger alerts when thresholds are breached , forwarded to (Netcool) to generate incident tickets.
+Each probe is centrally configured to collect performance and capacity metrics which is forwarded to Capacity Database (KDB) and 
+visualized through Grafana.
+
 Nimsoft -> Netcool (events) , KDB+ (metrics) -> Grafana dashboard.
