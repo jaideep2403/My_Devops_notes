@@ -153,6 +153,10 @@
 - OPENLENS
 - monitoring vs obeservability
 - daemonsets vs stateful sets
+- pvc unable to bind , troubleshoot
+- how to update version of image in docker
+- how containers in same pod communicate to each other
+- what is init container?
 - docker file to run apache and expose ports , explain dockerfile
 - docker file vs dockerfile.ops
 - how to specify resource limits cpu memory in docker
@@ -165,6 +169,8 @@
 - unable to connect to google dns, troubleshoot -- firewall
 - write a pod yaml file which prints logs infinitely and runtime for 2 mins
 - how to ensure security of metrics.
+- what is elastic IP , why it is needed , is 1 ip mapped to 1 instance or many instance
+- how to create eks cluster
 - metrics unable to dis[play in grafana , troubleshoot.
 - check which process consuming most cpu/mem resources.
 
