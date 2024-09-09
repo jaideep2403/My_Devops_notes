@@ -32,8 +32,9 @@ eg 10.0.0.0/16 -- 16 bits for network , remaining 16 bits for host address
 subnet -- pieces from vpc (scope is Availibility zone)
 ===============================================================================================================================================================================================================
 sec. group / nacl - network layer security
+sec guard - nacl  (associate with subnet)
 door in a building - sec group
-sec guard - nacl   
+
 nacl -- associate to a subnet (1:1 mapping) ( has both allow and deny ) 
       -- stateless - request, response both have to be allowed (eg india immigration) /verify both in , out 
 sec. group -- associated with an eni by def has an outbound rule  ( has only allow statements)
@@ -47,8 +48,8 @@ Virtual Private gateway -- associated with vpc
                            2. use via internet - (VPN) eg site to site vpn     eg. commercial flight
                                 for cost savings , not encrypted
 =====================================================================================================================-==================================================================
-VPC Peering - (PCx) - communicate from 1 vpc t another
-make a routing table entry
+VPC Peering - (PCx) - communicate from 1 vpc t another if diff account /region
+after peering connection , make entry in route table for peering vpc from both vpcs
 
 
 
