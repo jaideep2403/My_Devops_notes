@@ -23,6 +23,7 @@
 - how do you do patching in linux?
 - command to check disk usage
 - explain ci/cd in your project
+- which build tool are you using , only maven?
 - diff between NACl and SG?
 - is SG stateless or statefull?
 - S3 Lifecycle policies
