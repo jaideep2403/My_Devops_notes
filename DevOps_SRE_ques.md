@@ -15,6 +15,8 @@
 - how to run adhoc command in running docker container?
 - how to secure docker images?
 - how do you scan your docker images?
+- different docker networks
+- how to create a new docker network?
 - how to reduce docker image build size , write a Dockerfile
 - list open ports
 - how do you do patching in linux?
