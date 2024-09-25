@@ -1,0 +1,27 @@
+## Capgemini L1
+- introduce yourself
+- tell me about Kubernetes architecture , version used?
+- micro service , how many micro services do you manage all?
+- do you have seperate pipelines for all microservices?
+- how to upgrade kubernetes cluster?
+- difference between Replication controller  and Replica set and changes in api?
+- kubernetes error codes which you encountered?
+- is it possible to create pod without master node
+- what is static pods?
+- write a deployment yaml manifest?
+- what is gitlab runners?
+- what is gitlab api?
+- difference b/w docker compose and docker swarm?
+- how to run adhoc command in running docker container?
+- how to secure docker images? 
+- how to reduce docker image build size , write a Dockerfile
+- list open ports
+- how do you do patching in linux?
+- command to check disk usage
+- explain ci/cd in your project
+- diff between NACl and SG?
+- is SG stateless or statefull?
+- S3 Lifecycle policies
+- did you work in ansible
+- different routing policies in Route 53?
+- write terraform yaml file for vpc
