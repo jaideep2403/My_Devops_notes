@@ -9,6 +9,7 @@
 - is it possible to create pod without master node
 - what is static pods?
 - write a deployment yaml manifest?
+- diff between HPA and VPA, can we perform both VPA HPA at same time , how to restrict it?
 - what is gitlab runners?
 - what is gitlab api?
 - difference b/w docker compose and docker swarm?
