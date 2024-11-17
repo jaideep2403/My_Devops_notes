@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2024-11-17T06:58:41Z"
+  labels:
+    app: php-apache
+  name: php-apache
+  namespace: default
+  resourceVersion: "7391"
+  uid: c48c5a0c-bc33-403c-963b-2e704f95de83
+spec:
+  clusterIP: 10.100.69.116
+  clusterIPs:
+  - 10.100.69.116
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: "80"
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: php-apache
+  sessionAffinity: None
+  type: ClusterIP
+status:
+  loadBalancer: {}
