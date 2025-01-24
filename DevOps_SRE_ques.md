@@ -42,7 +42,7 @@
 - db hosted on a vm is full , steps to troubleshoot
 - ddos attack 
 - types of Load Balancer in GCP.
-- clents are in us-east and eu-west what strategies to deploy resources to minimise network traffic , cost
+- clients are in us-east and eu-west what strategies to deploy resources to minimise network traffic , cost
 - how is GKE different from kubernetes?
 - various types of Kind in manifest file.
 - Explain deployment strategies in kubernetes
@@ -57,9 +57,10 @@
 - difference between docker image, container, Docker Engine.?
 - run container from an image ?
 - check logs of a container?
+- implement best security for docker?
 - explain CI/CD for a Java application.
 - how to code coverage , image scans.
-- explain only and except in gitlab
+- explain only and except keywords i n gitlab
 - explain features of Gitlab, do you use self hosted runners or gitlab runners.
 - how do you pass sensitive info in CI/CD pipeline.
 - have you worked on version control?
