@@ -30,6 +30,7 @@
 - did you work in ansible
 - different routing policies in Route 53?
 - write terraform yaml file for vpc
+- have you worked on grafana pro
 
 
 
@@ -71,3 +72,4 @@
 - how to secure cloud resources.
 - steps, strategies to automate manual workloads, to make it scalable and secure.
 - difference between SLA, SLI , SLO.
+- how did you setup grafana and prrometheus.
