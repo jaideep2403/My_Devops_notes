@@ -30,3 +30,43 @@
 - did you work in ansible
 - different routing policies in Route 53?
 - write terraform yaml file for vpc
+
+
+
+## Publicis Sapient (GCP, DevOps L1)
+- introduce yourself, day to day activities.
+- any proud moment on your career.
+- what is workload identity in GCP.
+- how to create cloud sql instance.
+- how to make services access each other GKE , Bigquery
+- db hosted on a vm is full , steps to troubleshoot
+- ddos attack 
+- types of Load Balancer in GCP.
+- clents are in us-east and eu-west what strategies to deploy resources to minimise network traffic , cost
+- how is GKE different from kubernetes?
+- various types of Kind in manifest file.
+- Explain deployment strategies in kubernetes
+- how do you create secrets , type of secrets in kubernetes.
+- users were accessing a service and unabele to reach now , steps to troubleshoot
+- what is terraform taint?
+- you created one ec2 , how to check public ip -- forgot to add output block in terraform?
+- you deleted infra manually , how to let terraform know?
+- how to reduce image size in Docker?
+- explain multi stage docker build?
+- Difference b/w COPY , ADD , ENTRYPOINT and CMD.
+- difference between docker image, container, Docker Engine.?
+- run container from an image ?
+- check logs of a container?
+- explain CI/CD for a Java application.
+- how to code coverage , image scans.
+- explain only and except in gitlab
+- explain features of Gitlab, do you use self hosted runners or gitlab runners.
+- how do you pass sensitive info in CI/CD pipeline.
+- have you worked on version control?
+- what is helm charts , how do you deploy charts , best practice
+- helm chart failed how to troubleshoot.
+- how to deploy helm charts for different envirinments.
+- monitor production infra. url monitoring.
+- how to secure cloud resources.
+- steps, strategies to automate manual workloads, to make it scalable and secure.
+- difference between SLA, SLI , SLO.
