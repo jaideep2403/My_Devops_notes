@@ -47,6 +47,8 @@
 - how is GKE different from kubernetes?
 - various types of Kind in manifest file.
 - Explain deployment strategies in kubernetes.
+- how to schedule a pod on a speciifc node.
+- what is service mesh, did you work on Istio?
 - how do you create secrets , type of secrets in kubernetes.
 - users were accessing a service and unabele to reach now , steps to troubleshoot
 - what is terraform taint?
