@@ -32,8 +32,6 @@
 - write terraform yaml file for vpc
 - have you worked on grafana pro
 
-
-
 ## Publicis Sapient (GCP, DevOps L1)
 - introduce yourself, day to day activities.
 - any proud moment on your career.
@@ -78,3 +76,27 @@
 - difference between SLA, SLI , SLO.
 - how did you setup grafana and prrometheus.
 - any automation you performed?
+
+## Quantiphi Analytics 
+- introduce yourself.
+- how did you achive reduction in provisioning time.
+- write script to compare 3 nos python or bash.
+- write sample gitlab-yml file
+- explain what is stages in pipeline.
+- write dockerfile to reduce image size.
+- diff between copy and add.
+- diff between run , cmd , entrypoint.
+- ex we have npm install -- which we can run , and which we cant run.
+- explain boot process in linux
+- diff files structure in linux
+- difference in df and du command.
+- different kinds in yaml manifests.
+- which components in k8s help to schedule pods.
+- difference between statefull and stateless applications
+- ex I have a python application, can I consider statefull or stateless.
+- some data is stored in DB how to access in k8s cluster.
+- some reources are deployed on aws some on gcp , how to connect them.
+- how to print output on ec2 ip using terraform.
+- we are having apps running inside ec2,infra provisioned by terraform.. is terraform good option to upgrade the apps.
+- explain 3 tier architecture
+- 
