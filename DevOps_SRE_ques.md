@@ -32,7 +32,7 @@
 - write terraform yaml file for vpc
 - have you worked on grafana pro
 
-## Publicis Sapient (GCP, DevOps L1)
+## Publicis Sapient (GCP, DevOps L1) 24/1
 - introduce yourself, day to day activities.
 - any proud moment on your career.
 - what is workload identity in GCP.
@@ -77,7 +77,7 @@
 - how did you setup grafana and prrometheus.
 - any automation you performed?
 
-## Quantiphi Analytics 
+## Quantiphi Analytics (Platform Engineer) 28/1
 - introduce yourself.
 - how did you achive reduction in provisioning time.
 - write script to compare 3 nos python or bash.
