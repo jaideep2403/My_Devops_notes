@@ -41,6 +41,7 @@
 - db hosted on a vm is full , steps to troubleshoot
 - ddos attack 
 - types of Load Balancer in GCP.
+- auto-pilot cluster in GCP
 - clients are in us-east and eu-west what strategies to deploy resources to minimise network traffic , cost
 - how is GKE different from kubernetes?
 - various types of Kind in manifest file.
@@ -99,4 +100,12 @@
 - how to print output on ec2 ip using terraform.
 - we are having apps running inside ec2,infra provisioned by terraform.. is terraform good option to upgrade the apps.
 - explain 3 tier architecture
-- 
+  
+## Deloitte
+- steps to create gke cluster in terraform
+- explain your devops experience
+- cicd pipelines for terraform
+- Cloud functions vs cloud run
+- error handling diff in python vs go
+- handle multiple http requests in python
+
