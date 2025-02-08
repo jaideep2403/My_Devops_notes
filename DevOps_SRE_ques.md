@@ -93,6 +93,7 @@
 - difference in df and du command.
 - different kinds in yaml manifests.
 - which components in k8s help to schedule pods.
+- difference between authorisation and authentication.
 - difference between statefull and stateless applications
 - ex I have a python application, can I consider statefull or stateless.
 - some data is stored in DB how to access in k8s cluster.
