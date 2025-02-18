@@ -110,3 +110,25 @@
 - error handling diff in python vs go
 - handle multiple http requests in python
 
+## Verizon (Platform Data services Team , DevOps , SRE) 18/2
+- did you go through JD , which part excites you the most
+- tell us about your background.
+- which cloud are you more comfortable
+- explain how do you setup CI/CD for any app to deploy into eks/ gke
+- did you worked on gke
+- tell us about your eks clusters.
+- how to setup connectivity between gitlab and aws
+- which deployment strategy do you use
+- when I run kubectl get svc , what is displayed.
+- how do you setup terraform, what have you deployed
+- Terraform init , plan apply
+- what is statefile in terraform
+- one person created manual changes , how to deal with it.
+- there is large drift in infra .. i dont want to manage with terraform how to do it
+- migrate statefile stored in s3 to gcp bucket
+- did you worked in any data related services
+- did you worked on any scripting , explain
+- explain SLI , SLA , SLO
+- customer complained about slowness in portals , how do you define SLA , SLI , SLO for it
+- how did you leverage Pub/Sub
+- did you worked on BigQuery , Data Pipelines , DataProc clusters
