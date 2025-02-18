@@ -126,6 +126,7 @@
 - one person created manual changes , how to deal with it.
 - there is large drift in infra .. i dont want to manage with terraform how to do it
 - migrate statefile stored in s3 to gcp bucket
+- explain local exec vs remote exec provisioner
 - did you worked in any data related services
 - did you worked on any scripting , explain
 - explain SLI , SLA , SLO
