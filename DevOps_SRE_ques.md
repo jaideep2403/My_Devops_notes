@@ -123,6 +123,7 @@
 - how do you setup terraform, what have you deployed
 - Terraform init , plan apply
 - what is statefile in terraform
+- how LB will get public ip
 - one person created manual changes , how to deal with it.
 - there is large drift in infra .. i dont want to manage with terraform how to do it
 - migrate statefile stored in s3 to gcp bucket
